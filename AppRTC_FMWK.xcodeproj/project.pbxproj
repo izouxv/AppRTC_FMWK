@@ -61,8 +61,6 @@
 		420683251D59AFCA0060D817 /* RTCVideoSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682EB1D59AFCA0060D817 /* RTCVideoSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683261D59AFCA0060D817 /* RTCVideoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682EC1D59AFCA0060D817 /* RTCVideoTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683271D59AFCA0060D817 /* libWebRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682ED1D59AFCA0060D817 /* libWebRTC.a */; };
-		420683281D59AFCA0060D817 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 420682EF1D59AFCA0060D817 /* LICENSE */; };
-		420683291D59AFCA0060D817 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 420682F01D59AFCA0060D817 /* README.rst */; };
 		4206832A1D59AFCA0060D817 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682F21D59AFCA0060D817 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4206832B1D59AFCA0060D817 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682F31D59AFCA0060D817 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4206832C1D59AFCA0060D817 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 420682F41D59AFCA0060D817 /* SRWebSocket.m */; };
@@ -77,6 +75,9 @@
 		4206833E1D59B0000060D817 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833D1D59B0000060D817 /* CoreMedia.framework */; };
 		420683401D59B0060060D817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833F1D59B0060060D817 /* AudioToolbox.framework */; };
 		420683421D59B00A0060D817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420683411D59B00A0060D817 /* AVFoundation.framework */; };
+		423E86911D59CB1F007FE55E /* libWebRTC.a in Resources */ = {isa = PBXBuildFile; fileRef = 420682ED1D59AFCA0060D817 /* libWebRTC.a */; };
+		423E86991D59D484007FE55E /* RTC_XXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E86971D59D484007FE55E /* RTC_XXX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E86981D59D484007FE55E /* RTC_XXX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,8 @@
 		4206833D1D59B0000060D817 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4206833F1D59B0060060D817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		420683411D59B00A0060D817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		423E86971D59D484007FE55E /* RTC_XXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTC_XXX.h; sourceTree = "<group>"; };
+		423E86981D59D484007FE55E /* RTC_XXX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTC_XXX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 		4206829F1D59AFA40060D817 /* AppRTC_FMWK */ = {
 			isa = PBXGroup;
 			children = (
+				423E86961D59D484007FE55E /* libjingle_XXX */,
 				420682B71D59AFCA0060D817 /* AppRTC */,
 				420682CC1D59AFCA0060D817 /* libjingle_peerconnection */,
 				420682EE1D59AFCA0060D817 /* SocketRocket */,
@@ -355,6 +359,15 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		423E86961D59D484007FE55E /* libjingle_XXX */ = {
+			isa = PBXGroup;
+			children = (
+				423E86971D59D484007FE55E /* RTC_XXX.h */,
+				423E86981D59D484007FE55E /* RTC_XXX.m */,
+			);
+			path = libjingle_XXX;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -373,6 +386,7 @@
 				4206830A1D59AFCA0060D817 /* RTCAudioTrack.h in Headers */,
 				420682FB1D59AFCA0060D817 /* ARDSignalingMessage.h in Headers */,
 				420683231D59AFCA0060D817 /* RTCVideoCapturer.h in Headers */,
+				423E86991D59D484007FE55E /* RTC_XXX.h in Headers */,
 				4206831D1D59AFCA0060D817 /* RTCPeerConnectionInterface.h in Headers */,
 				420683111D59AFCA0060D817 /* RTCICEServer.h in Headers */,
 				420683201D59AFCA0060D817 /* RTCStatsDelegate.h in Headers */,
@@ -487,8 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420683281D59AFCA0060D817 /* LICENSE in Resources */,
-				420683291D59AFCA0060D817 /* README.rst in Resources */,
+				423E86911D59CB1F007FE55E /* libWebRTC.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +527,7 @@
 				4206832C1D59AFCA0060D817 /* SRWebSocket.m in Sources */,
 				420683041D59AFCA0060D817 /* RTCICEServer+JSON.m in Sources */,
 				420682FE1D59AFCA0060D817 /* ARDUtilities.m in Sources */,
+				423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */,
 				420682F61D59AFCA0060D817 /* ARDAppClient.m in Sources */,
 				420682FA1D59AFCA0060D817 /* ARDRegisterResponse.m in Sources */,
 				420683061D59AFCA0060D817 /* RTCMediaConstraints+JSON.m in Sources */,
@@ -645,6 +659,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppRTC_FMWK/libjingle_peerconnection/libjingle_peerconnection",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_dylib;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -667,6 +684,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppRTC_FMWK/libjingle_peerconnection/libjingle_peerconnection",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_dylib;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
