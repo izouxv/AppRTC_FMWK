@@ -75,7 +75,6 @@
 		4206833E1D59B0000060D817 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833D1D59B0000060D817 /* CoreMedia.framework */; };
 		420683401D59B0060060D817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833F1D59B0060060D817 /* AudioToolbox.framework */; };
 		420683421D59B00A0060D817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420683411D59B00A0060D817 /* AVFoundation.framework */; };
-		423E86911D59CB1F007FE55E /* libWebRTC.a in Resources */ = {isa = PBXBuildFile; fileRef = 420682ED1D59AFCA0060D817 /* libWebRTC.a */; };
 		423E86991D59D484007FE55E /* RTC_XXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E86971D59D484007FE55E /* RTC_XXX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E86981D59D484007FE55E /* RTC_XXX.m */; };
 /* End PBXBuildFile section */
@@ -501,7 +500,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423E86911D59CB1F007FE55E /* libWebRTC.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
