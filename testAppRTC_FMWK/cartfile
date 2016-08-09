@@ -1,0 +1,8 @@
+
+#carthage update --no-use-binaries --platform iOS --use-submodules
+#carthage bootstrap --no-use-binaries --platform iOS --use-submodules
+
+
+github "izouxv/AppRTC_FMWK"  "master"
+
+
