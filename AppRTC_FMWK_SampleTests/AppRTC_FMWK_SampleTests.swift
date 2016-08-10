@@ -1,15 +1,15 @@
 //
-//  testAppRTC_FMWKTests.swift
-//  testAppRTC_FMWKTests
+//  AppRTC_FMWK_SampleTests.swift
+//  AppRTC_FMWK_SampleTests
 //
-//  Created by zouxu on 9/8/16.
+//  Created by zouxu on 10/8/16.
 //  Copyright © 2016 team.bz.fishcore. All rights reserved.
 //
 
 import XCTest
-@testable import testAppRTC_FMWK
+@testable import AppRTC_FMWK_Sample
 
-class testAppRTC_FMWKTests: XCTestCase {
+class AppRTC_FMWK_SampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

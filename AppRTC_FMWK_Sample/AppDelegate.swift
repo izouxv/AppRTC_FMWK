@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  testAppRTC_FMWK
+//  AppRTC_FMWK_Sample
 //
-//  Created by zouxu on 9/8/16.
+//  Created by zouxu on 10/8/16.
 //  Copyright © 2016 team.bz.fishcore. All rights reserved.
 //
 

@@ -77,6 +77,16 @@
 		420683421D59B00A0060D817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420683411D59B00A0060D817 /* AVFoundation.framework */; };
 		423E86991D59D484007FE55E /* RTC_XXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E86971D59D484007FE55E /* RTC_XXX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E86981D59D484007FE55E /* RTC_XXX.m */; };
+		423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C71D5AFCDE007FE55E /* AppDelegate.swift */; };
+		423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C91D5AFCDE007FE55E /* ViewController.swift */; };
+		423E86CD1D5AFCDE007FE55E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423E86CB1D5AFCDE007FE55E /* Main.storyboard */; };
+		423E86CF1D5AFCDE007FE55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423E86CE1D5AFCDE007FE55E /* Assets.xcassets */; };
+		423E86D21D5AFCDE007FE55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423E86D01D5AFCDE007FE55E /* LaunchScreen.storyboard */; };
+		423E86DD1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */; };
+		423E86E71D5AFD1A007FE55E /* RoomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */; };
+		423E86E81D5AFD1A007FE55E /* WebRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */; };
+		423E86ED1D5AFDE0007FE55E /* AppRTC_FMWK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; };
+		423E86EF1D5AFE1C007FE55E /* AppRTC_FMWK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +97,34 @@
 			remoteGlobalIDString = 4206829C1D59AFA40060D817;
 			remoteInfo = AppRTC_FMWK;
 		};
+		423E86D91D5AFCDE007FE55E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420682941D59AFA40060D817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423E86C41D5AFCDE007FE55E;
+			remoteInfo = AppRTC_FMWK_Sample;
+		};
+		423E86EB1D5AFDD1007FE55E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420682941D59AFA40060D817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4206829C1D59AFA40060D817;
+			remoteInfo = AppRTC_FMWK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		423E86EE1D5AFE13007FE55E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				423E86EF1D5AFE1C007FE55E /* AppRTC_FMWK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppRTC_FMWK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +202,18 @@
 		420683411D59B00A0060D817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		423E86971D59D484007FE55E /* RTC_XXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTC_XXX.h; sourceTree = "<group>"; };
 		423E86981D59D484007FE55E /* RTC_XXX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTC_XXX.m; sourceTree = "<group>"; };
+		423E86C51D5AFCDE007FE55E /* AppRTC_FMWK_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTC_FMWK_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423E86C71D5AFCDE007FE55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		423E86C91D5AFCDE007FE55E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		423E86CC1D5AFCDE007FE55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		423E86CE1D5AFCDE007FE55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		423E86D11D5AFCDE007FE55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		423E86D31D5AFCDE007FE55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423E86D81D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRTC_FMWK_SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRTC_FMWK_SampleTests.swift; sourceTree = "<group>"; };
+		423E86DE1D5AFCDE007FE55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNameViewController.swift; sourceTree = "<group>"; };
+		423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +244,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		423E86C21D5AFCDE007FE55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E86ED1D5AFDE0007FE55E /* AppRTC_FMWK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E86D51D5AFCDE007FE55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +267,8 @@
 			children = (
 				4206829F1D59AFA40060D817 /* AppRTC_FMWK */,
 				420682AB1D59AFA40060D817 /* AppRTC_FMWKTests */,
+				423E86C61D5AFCDE007FE55E /* AppRTC_FMWK_Sample */,
+				423E86DB1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests */,
 				4206829E1D59AFA40060D817 /* Products */,
 				420683431D59B0170060D817 /* Framework */,
 			);
@@ -213,6 +279,8 @@
 			children = (
 				4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */,
 				420682A71D59AFA40060D817 /* AppRTC_FMWKTests.xctest */,
+				423E86C51D5AFCDE007FE55E /* AppRTC_FMWK_Sample.app */,
+				423E86D81D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,6 +435,30 @@
 			path = libjingle_XXX;
 			sourceTree = "<group>";
 		};
+		423E86C61D5AFCDE007FE55E /* AppRTC_FMWK_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */,
+				423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */,
+				423E86C71D5AFCDE007FE55E /* AppDelegate.swift */,
+				423E86C91D5AFCDE007FE55E /* ViewController.swift */,
+				423E86CB1D5AFCDE007FE55E /* Main.storyboard */,
+				423E86CE1D5AFCDE007FE55E /* Assets.xcassets */,
+				423E86D01D5AFCDE007FE55E /* LaunchScreen.storyboard */,
+				423E86D31D5AFCDE007FE55E /* Info.plist */,
+			);
+			path = AppRTC_FMWK_Sample;
+			sourceTree = "<group>";
+		};
+		423E86DB1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */,
+				423E86DE1D5AFCDE007FE55E /* Info.plist */,
+			);
+			path = AppRTC_FMWK_SampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -460,12 +552,50 @@
 			productReference = 420682A71D59AFA40060D817 /* AppRTC_FMWKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		423E86C41D5AFCDE007FE55E /* AppRTC_FMWK_Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423E86DF1D5AFCDE007FE55E /* Build configuration list for PBXNativeTarget "AppRTC_FMWK_Sample" */;
+			buildPhases = (
+				423E86C11D5AFCDE007FE55E /* Sources */,
+				423E86C21D5AFCDE007FE55E /* Frameworks */,
+				423E86C31D5AFCDE007FE55E /* Resources */,
+				423E86EE1D5AFE13007FE55E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423E86EC1D5AFDD1007FE55E /* PBXTargetDependency */,
+			);
+			name = AppRTC_FMWK_Sample;
+			productName = AppRTC_FMWK_Sample;
+			productReference = 423E86C51D5AFCDE007FE55E /* AppRTC_FMWK_Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		423E86D71D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 423E86E21D5AFCDE007FE55E /* Build configuration list for PBXNativeTarget "AppRTC_FMWK_SampleTests" */;
+			buildPhases = (
+				423E86D41D5AFCDE007FE55E /* Sources */,
+				423E86D51D5AFCDE007FE55E /* Frameworks */,
+				423E86D61D5AFCDE007FE55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423E86DA1D5AFCDE007FE55E /* PBXTargetDependency */,
+			);
+			name = AppRTC_FMWK_SampleTests;
+			productName = AppRTC_FMWK_SampleTests;
+			productReference = 423E86D81D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		420682941D59AFA40060D817 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = team.bz.fishcore;
 				TargetAttributes = {
@@ -475,6 +605,13 @@
 					420682A61D59AFA40060D817 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					423E86C41D5AFCDE007FE55E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					423E86D71D5AFCDE007FE55E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 423E86C41D5AFCDE007FE55E;
+					};
 				};
 			};
 			buildConfigurationList = 420682971D59AFA40060D817 /* Build configuration list for PBXProject "AppRTC_FMWK" */;
@@ -483,6 +620,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 420682931D59AFA40060D817;
 			productRefGroup = 4206829E1D59AFA40060D817 /* Products */;
@@ -491,6 +629,8 @@
 			targets = (
 				4206829C1D59AFA40060D817 /* AppRTC_FMWK */,
 				420682A61D59AFA40060D817 /* AppRTC_FMWKTests */,
+				423E86C41D5AFCDE007FE55E /* AppRTC_FMWK_Sample */,
+				423E86D71D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -504,6 +644,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		420682A51D59AFA40060D817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E86C31D5AFCDE007FE55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E86D21D5AFCDE007FE55E /* LaunchScreen.storyboard in Resources */,
+				423E86CF1D5AFCDE007FE55E /* Assets.xcassets in Resources */,
+				423E86CD1D5AFCDE007FE55E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E86D61D5AFCDE007FE55E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,6 +697,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		423E86C11D5AFCDE007FE55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */,
+				423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */,
+				423E86E71D5AFD1A007FE55E /* RoomNameViewController.swift in Sources */,
+				423E86E81D5AFD1A007FE55E /* WebRTCViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423E86D41D5AFCDE007FE55E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423E86DD1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -548,7 +724,36 @@
 			target = 4206829C1D59AFA40060D817 /* AppRTC_FMWK */;
 			targetProxy = 420682A91D59AFA40060D817 /* PBXContainerItemProxy */;
 		};
+		423E86DA1D5AFCDE007FE55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423E86C41D5AFCDE007FE55E /* AppRTC_FMWK_Sample */;
+			targetProxy = 423E86D91D5AFCDE007FE55E /* PBXContainerItemProxy */;
+		};
+		423E86EC1D5AFDD1007FE55E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4206829C1D59AFA40060D817 /* AppRTC_FMWK */;
+			targetProxy = 423E86EB1D5AFDD1007FE55E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		423E86CB1D5AFCDE007FE55E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423E86CC1D5AFCDE007FE55E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		423E86D01D5AFCDE007FE55E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423E86D11D5AFCDE007FE55E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		420682AF1D59AFA40060D817 /* Debug */ = {
@@ -711,6 +916,65 @@
 			};
 			name = Release;
 		};
+		423E86E01D5AFCDE007FE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AppRTC_FMWK_Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		423E86E11D5AFCDE007FE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AppRTC_FMWK_Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+			};
+			name = Release;
+		};
+		423E86E31D5AFCDE007FE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AppRTC_FMWK_SampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRTC_FMWK_Sample.app/AppRTC_FMWK_Sample";
+			};
+			name = Debug;
+		};
+		423E86E41D5AFCDE007FE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AppRTC_FMWK_SampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.AppRTC-FMWK-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRTC_FMWK_Sample.app/AppRTC_FMWK_Sample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,6 +1004,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		423E86DF1D5AFCDE007FE55E /* Build configuration list for PBXNativeTarget "AppRTC_FMWK_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E86E01D5AFCDE007FE55E /* Debug */,
+				423E86E11D5AFCDE007FE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		423E86E21D5AFCDE007FE55E /* Build configuration list for PBXNativeTarget "AppRTC_FMWK_SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423E86E31D5AFCDE007FE55E /* Debug */,
+				423E86E41D5AFCDE007FE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
