@@ -72,10 +72,10 @@ public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, R
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func endButton(sender: UIButton) {
-        disconnect()
-        self.navigationController?.popToRootViewControllerAnimated(true)
-    }
+//    @IBAction func endButton(sender: UIButton) {
+//        disconnect()
+//        self.navigationController?.popToRootViewControllerAnimated(true)
+//    }
     
     //    MARK: RTCEAGLVideoViewDelegate
     public func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {

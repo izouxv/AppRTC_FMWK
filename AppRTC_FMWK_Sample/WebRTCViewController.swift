@@ -30,6 +30,11 @@ public class WebRTCViewController: WebRTCViewControllerBase{
         remoteView.addSubViewXAsWholeXXXXXXXX(remoteView1)
         remoteView.addSubViewXAsWholeXXXXXXXX(localView1)
     }
+    
+    @IBAction func endButton(sender: UIButton) {
+        disconnect()
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
 }
 
 /*
