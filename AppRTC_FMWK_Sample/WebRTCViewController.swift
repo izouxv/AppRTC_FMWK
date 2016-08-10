@@ -20,6 +20,19 @@
 
 import UIKit
 
+import AppRTC_FMWK
+
+public class WebRTCViewController: WebRTCViewControllerBase{
+    @IBOutlet weak var remoteView: UIView!
+    @IBOutlet weak var localView: UIView!
+    
+    public override func LayoutVideoViews(remoteView1:UIView, _ localView1:UIView){
+        remoteView.addSubViewXAsWholeXXXXXXXX(remoteView1)
+        remoteView.addSubViewXAsWholeXXXXXXXX(localView1)
+    }
+}
+
+/*
 // The view controller that is displayed when WebRTC iOS Swift is loaded.
 public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideoViewDelegate {
     @IBOutlet weak var remoteView: RTCEAGLVideoView!
@@ -38,7 +51,7 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         connectToChatRoom()
     }
     
-    public   override func viewWillDisappear(animated: Bool) {
+    public override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         disconnect()
     }
@@ -68,17 +81,17 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         }
     }
     
-    public   func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
+    public func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
         self.localVideoTrack = localVideoTrack
         self.localVideoTrack?.addRenderer(localView)
     }
     
-    public   func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
+    public func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
         self.remoteVideoTrack = remoteVideoTrack
         self.remoteVideoTrack?.addRenderer(remoteView)
     }
     
-    public   func appClient(client: ARDAppClient!, didError error: NSError!) {
+    public func appClient(client: ARDAppClient!, didError error: NSError!) {
         //        Handle the error
         showAlertWithMessage(error.localizedDescription)
         disconnect()
@@ -86,7 +99,7 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
     
     //    MARK: RTCEAGLVideoViewDelegate
     
-    public   func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
+    public func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
         //        Resize localView or remoteView based on the size returned
     }
     
@@ -135,4 +148,5 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         self.presentViewController(alertView, animated: true, completion: nil)
     }
 }
+ */
 

@@ -8,7 +8,6 @@
 
 import UIKit
 
-import AppRTC_FMWK
 
 class RoomNameViewController: UIViewController {
     @IBOutlet weak var roomName: UITextField!

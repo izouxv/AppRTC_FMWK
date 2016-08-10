@@ -75,6 +75,7 @@
 		4206833E1D59B0000060D817 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833D1D59B0000060D817 /* CoreMedia.framework */; };
 		420683401D59B0060060D817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833F1D59B0060060D817 /* AudioToolbox.framework */; };
 		420683421D59B00A0060D817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420683411D59B00A0060D817 /* AVFoundation.framework */; };
+		420B55021D5B08D2007F9D6E /* WebRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B55011D5B08D2007F9D6E /* WebRTCViewController.swift */; };
 		423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C71D5AFCDE007FE55E /* AppDelegate.swift */; };
 		423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C91D5AFCDE007FE55E /* ViewController.swift */; };
 		423E86CD1D5AFCDE007FE55E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423E86CB1D5AFCDE007FE55E /* Main.storyboard */; };
@@ -83,7 +84,7 @@
 		423E86DD1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */; };
 		423E86ED1D5AFDE0007FE55E /* AppRTC_FMWK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; };
 		423E86EF1D5AFE1C007FE55E /* AppRTC_FMWK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		423E86F51D5AFEE5007FE55E /* WebRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */; };
+		423E86F51D5AFEE5007FE55E /* WebRTCViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86F41D5AFEE5007FE55E /* WebRTCViewControllerBase.swift */; };
 		423E86F71D5AFF7F007FE55E /* RoomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,7 @@
 		4206833D1D59B0000060D817 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4206833F1D59B0060060D817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		420683411D59B00A0060D817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		420B55011D5B08D2007F9D6E /* WebRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewController.swift; sourceTree = "<group>"; };
 		423E86C51D5AFCDE007FE55E /* AppRTC_FMWK_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTC_FMWK_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423E86C71D5AFCDE007FE55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		423E86C91D5AFCDE007FE55E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +210,7 @@
 		423E86D81D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRTC_FMWK_SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRTC_FMWK_SampleTests.swift; sourceTree = "<group>"; };
 		423E86DE1D5AFCDE007FE55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewController.swift; sourceTree = "<group>"; };
+		423E86F41D5AFEE5007FE55E /* WebRTCViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewControllerBase.swift; sourceTree = "<group>"; };
 		423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -425,6 +427,7 @@
 		423E86C61D5AFCDE007FE55E /* AppRTC_FMWK_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				420B55011D5B08D2007F9D6E /* WebRTCViewController.swift */,
 				423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */,
 				423E86C71D5AFCDE007FE55E /* AppDelegate.swift */,
 				423E86C91D5AFCDE007FE55E /* ViewController.swift */,
@@ -448,7 +451,7 @@
 		423E86F31D5AFEE5007FE55E /* rtcVC */ = {
 			isa = PBXGroup;
 			children = (
-				423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */,
+				423E86F41D5AFEE5007FE55E /* WebRTCViewControllerBase.swift */,
 			);
 			path = rtcVC;
 			sourceTree = "<group>";
@@ -676,7 +679,7 @@
 				420683041D59AFCA0060D817 /* RTCICEServer+JSON.m in Sources */,
 				420682FE1D59AFCA0060D817 /* ARDUtilities.m in Sources */,
 				420682F61D59AFCA0060D817 /* ARDAppClient.m in Sources */,
-				423E86F51D5AFEE5007FE55E /* WebRTCViewController.swift in Sources */,
+				423E86F51D5AFEE5007FE55E /* WebRTCViewControllerBase.swift in Sources */,
 				420682FA1D59AFCA0060D817 /* ARDRegisterResponse.m in Sources */,
 				420683061D59AFCA0060D817 /* RTCMediaConstraints+JSON.m in Sources */,
 			);
@@ -697,6 +700,7 @@
 				423E86F71D5AFF7F007FE55E /* RoomNameViewController.swift in Sources */,
 				423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */,
 				423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */,
+				420B55021D5B08D2007F9D6E /* WebRTCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
