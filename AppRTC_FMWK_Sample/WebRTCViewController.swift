@@ -28,7 +28,7 @@ public class WebRTCViewController: WebRTCViewControllerBase{
     
     public override func LayoutVideoViews(remoteView1:UIView, _ localView1:UIView){
         remoteView.addSubViewXAsWholeXXXXXXXX(remoteView1)
-        remoteView.addSubViewXAsWholeXXXXXXXX(localView1)
+        localView.addSubViewXAsWholeXXXXXXXX(localView1)
     }
     
     @IBAction func endButton(sender: UIButton) {
