@@ -14,7 +14,7 @@
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //  GNU General Public License for more details.
-//    
+//
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -25,12 +25,12 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
     @IBOutlet weak var remoteView: RTCEAGLVideoView!
     @IBOutlet weak var localView: RTCEAGLVideoView!
     
-  public   var roomName: String!
+    public   var roomName: String!
     var client: ARDAppClient?
     var localVideoTrack: RTCVideoTrack?
     var remoteVideoTrack: RTCVideoTrack?
-
-   public  override func viewDidLoad() {
+    
+    public  override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,12 +38,12 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         connectToChatRoom()
     }
     
-  public   override func viewWillDisappear(animated: Bool) {
+    public   override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         disconnect()
     }
-
-   public  override func didReceiveMemoryWarning() {
+    
+    public  override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -53,8 +53,8 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
-//    MARK: RTCEAGLVideoViewDelegate
-  public   func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {
+    //    MARK: RTCEAGLVideoViewDelegate
+    public   func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {
         switch state{
         case ARDAppClientState.Connected:
             print("Client Connected")
@@ -68,36 +68,36 @@ public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEA
         }
     }
     
-  public   func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
+    public   func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
         self.localVideoTrack = localVideoTrack
         self.localVideoTrack?.addRenderer(localView)
     }
     
-  public   func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
+    public   func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
         self.remoteVideoTrack = remoteVideoTrack
         self.remoteVideoTrack?.addRenderer(remoteView)
     }
     
-  public   func appClient(client: ARDAppClient!, didError error: NSError!) {
-//        Handle the error
+    public   func appClient(client: ARDAppClient!, didError error: NSError!) {
+        //        Handle the error
         showAlertWithMessage(error.localizedDescription)
         disconnect()
     }
     
-//    MARK: RTCEAGLVideoViewDelegate
+    //    MARK: RTCEAGLVideoViewDelegate
     
-  public   func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
-//        Resize localView or remoteView based on the size returned
+    public   func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
+        //        Resize localView or remoteView based on the size returned
     }
     
-//    MARK: Private
+    //    MARK: Private
     
     func initialize(){
         disconnect()
-//        Initializes the ARDAppClient with the delegate assignment
+        //        Initializes the ARDAppClient with the delegate assignment
         client = ARDAppClient.init(delegate: self)
         
-//        RTCEAGLVideoViewDelegate provides notifications on video frame dimensions
+        //        RTCEAGLVideoViewDelegate provides notifications on video frame dimensions
         remoteView.delegate = self
         localView.delegate = self
     }
