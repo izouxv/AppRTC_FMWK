@@ -44,7 +44,7 @@
 		420683141D59AFCA0060D817 /* RTCMediaSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DA1D59AFCA0060D817 /* RTCMediaSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683151D59AFCA0060D817 /* RTCMediaStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DB1D59AFCA0060D817 /* RTCMediaStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683161D59AFCA0060D817 /* RTCMediaStreamTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DC1D59AFCA0060D817 /* RTCMediaStreamTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420683171D59AFCA0060D817 /* RTCNSGLVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DD1D59AFCA0060D817 /* RTCNSGLVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420683171D59AFCA0060D817 /* RTCNSGLVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DD1D59AFCA0060D817 /* RTCNSGLVideoView.h */; };
 		420683181D59AFCA0060D817 /* RTCOpenGLVideoRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DE1D59AFCA0060D817 /* RTCOpenGLVideoRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683191D59AFCA0060D817 /* RTCPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682DF1D59AFCA0060D817 /* RTCPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4206831A1D59AFCA0060D817 /* RTCPeerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682E01D59AFCA0060D817 /* RTCPeerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +61,7 @@
 		420683251D59AFCA0060D817 /* RTCVideoSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682EB1D59AFCA0060D817 /* RTCVideoSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683261D59AFCA0060D817 /* RTCVideoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682EC1D59AFCA0060D817 /* RTCVideoTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420683271D59AFCA0060D817 /* libWebRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682ED1D59AFCA0060D817 /* libWebRTC.a */; };
-		4206832A1D59AFCA0060D817 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682F21D59AFCA0060D817 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4206832A1D59AFCA0060D817 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682F21D59AFCA0060D817 /* SocketRocket.h */; };
 		4206832B1D59AFCA0060D817 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 420682F31D59AFCA0060D817 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4206832C1D59AFCA0060D817 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 420682F41D59AFCA0060D817 /* SRWebSocket.m */; };
 		4206832E1D59AFD90060D817 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206832D1D59AFD90060D817 /* libicucore.tbd */; };
@@ -75,18 +75,16 @@
 		4206833E1D59B0000060D817 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833D1D59B0000060D817 /* CoreMedia.framework */; };
 		420683401D59B0060060D817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206833F1D59B0060060D817 /* AudioToolbox.framework */; };
 		420683421D59B00A0060D817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420683411D59B00A0060D817 /* AVFoundation.framework */; };
-		423E86991D59D484007FE55E /* RTC_XXX.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E86971D59D484007FE55E /* RTC_XXX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E86981D59D484007FE55E /* RTC_XXX.m */; };
 		423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C71D5AFCDE007FE55E /* AppDelegate.swift */; };
 		423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86C91D5AFCDE007FE55E /* ViewController.swift */; };
 		423E86CD1D5AFCDE007FE55E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423E86CB1D5AFCDE007FE55E /* Main.storyboard */; };
 		423E86CF1D5AFCDE007FE55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423E86CE1D5AFCDE007FE55E /* Assets.xcassets */; };
 		423E86D21D5AFCDE007FE55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423E86D01D5AFCDE007FE55E /* LaunchScreen.storyboard */; };
 		423E86DD1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */; };
-		423E86E71D5AFD1A007FE55E /* RoomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */; };
-		423E86E81D5AFD1A007FE55E /* WebRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */; };
 		423E86ED1D5AFDE0007FE55E /* AppRTC_FMWK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; };
 		423E86EF1D5AFE1C007FE55E /* AppRTC_FMWK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4206829D1D59AFA40060D817 /* AppRTC_FMWK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423E86F51D5AFEE5007FE55E /* WebRTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */; };
+		423E86F71D5AFF7F007FE55E /* RoomNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,8 +198,6 @@
 		4206833D1D59B0000060D817 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4206833F1D59B0060060D817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		420683411D59B00A0060D817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		423E86971D59D484007FE55E /* RTC_XXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTC_XXX.h; sourceTree = "<group>"; };
-		423E86981D59D484007FE55E /* RTC_XXX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTC_XXX.m; sourceTree = "<group>"; };
 		423E86C51D5AFCDE007FE55E /* AppRTC_FMWK_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTC_FMWK_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423E86C71D5AFCDE007FE55E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		423E86C91D5AFCDE007FE55E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,8 +208,8 @@
 		423E86D81D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRTC_FMWK_SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		423E86DC1D5AFCDE007FE55E /* AppRTC_FMWK_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRTC_FMWK_SampleTests.swift; sourceTree = "<group>"; };
 		423E86DE1D5AFCDE007FE55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNameViewController.swift; sourceTree = "<group>"; };
-		423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewController.swift; sourceTree = "<group>"; };
+		423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCViewController.swift; sourceTree = "<group>"; };
+		423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,7 +284,7 @@
 		4206829F1D59AFA40060D817 /* AppRTC_FMWK */ = {
 			isa = PBXGroup;
 			children = (
-				423E86961D59D484007FE55E /* libjingle_XXX */,
+				423E86F31D5AFEE5007FE55E /* rtcVC */,
 				420682B71D59AFCA0060D817 /* AppRTC */,
 				420682CC1D59AFCA0060D817 /* libjingle_peerconnection */,
 				420682EE1D59AFCA0060D817 /* SocketRocket */,
@@ -426,20 +422,10 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
-		423E86961D59D484007FE55E /* libjingle_XXX */ = {
-			isa = PBXGroup;
-			children = (
-				423E86971D59D484007FE55E /* RTC_XXX.h */,
-				423E86981D59D484007FE55E /* RTC_XXX.m */,
-			);
-			path = libjingle_XXX;
-			sourceTree = "<group>";
-		};
 		423E86C61D5AFCDE007FE55E /* AppRTC_FMWK_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				423E86E51D5AFD1A007FE55E /* RoomNameViewController.swift */,
-				423E86E61D5AFD1A007FE55E /* WebRTCViewController.swift */,
+				423E86F61D5AFF7F007FE55E /* RoomNameViewController.swift */,
 				423E86C71D5AFCDE007FE55E /* AppDelegate.swift */,
 				423E86C91D5AFCDE007FE55E /* ViewController.swift */,
 				423E86CB1D5AFCDE007FE55E /* Main.storyboard */,
@@ -457,6 +443,14 @@
 				423E86DE1D5AFCDE007FE55E /* Info.plist */,
 			);
 			path = AppRTC_FMWK_SampleTests;
+			sourceTree = "<group>";
+		};
+		423E86F31D5AFEE5007FE55E /* rtcVC */ = {
+			isa = PBXGroup;
+			children = (
+				423E86F41D5AFEE5007FE55E /* WebRTCViewController.swift */,
+			);
+			path = rtcVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +471,6 @@
 				4206830A1D59AFCA0060D817 /* RTCAudioTrack.h in Headers */,
 				420682FB1D59AFCA0060D817 /* ARDSignalingMessage.h in Headers */,
 				420683231D59AFCA0060D817 /* RTCVideoCapturer.h in Headers */,
-				423E86991D59D484007FE55E /* RTC_XXX.h in Headers */,
 				4206831D1D59AFCA0060D817 /* RTCPeerConnectionInterface.h in Headers */,
 				420683111D59AFCA0060D817 /* RTCICEServer.h in Headers */,
 				420683201D59AFCA0060D817 /* RTCStatsDelegate.h in Headers */,
@@ -682,8 +675,8 @@
 				4206832C1D59AFCA0060D817 /* SRWebSocket.m in Sources */,
 				420683041D59AFCA0060D817 /* RTCICEServer+JSON.m in Sources */,
 				420682FE1D59AFCA0060D817 /* ARDUtilities.m in Sources */,
-				423E869A1D59D484007FE55E /* RTC_XXX.m in Sources */,
 				420682F61D59AFCA0060D817 /* ARDAppClient.m in Sources */,
+				423E86F51D5AFEE5007FE55E /* WebRTCViewController.swift in Sources */,
 				420682FA1D59AFCA0060D817 /* ARDRegisterResponse.m in Sources */,
 				420683061D59AFCA0060D817 /* RTCMediaConstraints+JSON.m in Sources */,
 			);
@@ -701,10 +694,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423E86F71D5AFF7F007FE55E /* RoomNameViewController.swift in Sources */,
 				423E86CA1D5AFCDE007FE55E /* ViewController.swift in Sources */,
 				423E86C81D5AFCDE007FE55E /* AppDelegate.swift in Sources */,
-				423E86E71D5AFD1A007FE55E /* RoomNameViewController.swift in Sources */,
-				423E86E81D5AFD1A007FE55E /* WebRTCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +912,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -938,6 +931,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1012,6 +1006,7 @@
 				423E86E11D5AFCDE007FE55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		423E86E21D5AFCDE007FE55E /* Build configuration list for PBXNativeTarget "AppRTC_FMWK_SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -1020,6 +1015,7 @@
 				423E86E41D5AFCDE007FE55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

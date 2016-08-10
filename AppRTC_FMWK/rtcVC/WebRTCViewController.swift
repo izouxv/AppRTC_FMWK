@@ -20,19 +20,17 @@
 
 import UIKit
 
-import AppRTC_FMWK
-
 // The view controller that is displayed when WebRTC iOS Swift is loaded.
-class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideoViewDelegate {
-    @IBOutlet weak var remoteView: RTCEAGLVideoViewX!
-    @IBOutlet weak var localView: RTCEAGLVideoViewX!
+public class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideoViewDelegate {
+    @IBOutlet weak var remoteView: RTCEAGLVideoView!
+    @IBOutlet weak var localView: RTCEAGLVideoView!
     
-    var roomName: String!
+  public   var roomName: String!
     var client: ARDAppClient?
-    var localVideoTrack: RTCVideoTrackX?
-    var remoteVideoTrack: RTCVideoTrackX?
+    var localVideoTrack: RTCVideoTrack?
+    var remoteVideoTrack: RTCVideoTrack?
 
-    override func viewDidLoad() {
+   public  override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,12 +38,12 @@ class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideo
         connectToChatRoom()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+  public   override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         disconnect()
     }
 
-    override func didReceiveMemoryWarning() {
+   public  override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -56,7 +54,7 @@ class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideo
     }
     
 //    MARK: RTCEAGLVideoViewDelegate
-    func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {
+  public   func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {
         switch state{
         case ARDAppClientState.Connected:
             print("Client Connected")
@@ -70,21 +68,17 @@ class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideo
         }
     }
     
-    func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
-        if let localVideoTrack = localVideoTrack{
-            self.localVideoTrack = localVideoTrack as? RTCVideoTrackX
-        }
+  public   func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
+        self.localVideoTrack = localVideoTrack
         self.localVideoTrack?.addRenderer(localView)
     }
     
-    func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
-        if let remoteVideoTrack = remoteVideoTrack{
-            self.remoteVideoTrack = remoteVideoTrack as? RTCVideoTrackX
-        }
+  public   func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
+        self.remoteVideoTrack = remoteVideoTrack
         self.remoteVideoTrack?.addRenderer(remoteView)
     }
     
-    func appClient(client: ARDAppClient!, didError error: NSError!) {
+  public   func appClient(client: ARDAppClient!, didError error: NSError!) {
 //        Handle the error
         showAlertWithMessage(error.localizedDescription)
         disconnect()
@@ -92,7 +86,7 @@ class WebRTCViewController: UIViewController, ARDAppClientDelegate, RTCEAGLVideo
     
 //    MARK: RTCEAGLVideoViewDelegate
     
-    func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
+  public   func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
 //        Resize localView or remoteView based on the size returned
     }
     

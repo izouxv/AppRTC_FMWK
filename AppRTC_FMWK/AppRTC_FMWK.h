@@ -16,8 +16,7 @@ FOUNDATION_EXPORT const unsigned char AppRTC_FMWKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AppRTC_FMWK/PublicHeader.h>
 
-
-#import <AppRTC_FMWK/RTC_XXX.h>
+ 
 
 #import <AppRTC_FMWK/ARDAppClient.h>
 #import <AppRTC_FMWK/ARDMessageResponse.h>
