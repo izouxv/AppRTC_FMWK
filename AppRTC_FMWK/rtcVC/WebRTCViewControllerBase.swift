@@ -22,7 +22,7 @@ import UIKit
 
 
 extension UIView {
-    public  func addSubViewXAsWholeXXXXXXXX(view:UIView){
+    public  func addSubViewXAsWholeXXXXXXXX(_ view:UIView){
         view.removeFromSuperview()
         
         self.addSubview(view)
@@ -31,8 +31,8 @@ extension UIView {
         self.addConstraintsXXXXXX("H:|[view]|", viewsDic)
         self.addConstraintsXXXXXX("V:|[view]|", viewsDic)
     }
-    public func addConstraintsXXXXXX(constraintsVFL: String,_ views: [String: UIView],_ metrics: [String: AnyObject]?=nil,_ options: NSLayoutFormatOptions = NSLayoutFormatOptions()) {
-        let constraints = NSLayoutConstraint.constraintsWithVisualFormat(constraintsVFL, options:options, metrics: metrics, views: views)
+    public func addConstraintsXXXXXX(_ constraintsVFL: String,_ views: [String: UIView],_ metrics: [String: AnyObject]?=nil,_ options: NSLayoutFormatOptions = NSLayoutFormatOptions()) {
+        let constraints = NSLayoutConstraint.constraints(withVisualFormat: constraintsVFL, options:options, metrics: metrics, views: views)
         self.addConstraints(constraints)
     }
 }
@@ -40,20 +40,20 @@ extension UIView {
 
 
 // The view controller that is displayed when WebRTC iOS Swift is loaded.
-public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTCEAGLVideoViewDelegate {
+open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTCEAGLVideoViewDelegate {
  
-    public func LayoutVideoViews(remoteView1:UIView,_ localView1:UIView){
+    open func LayoutVideoViews(_ remoteView1:UIView,_ localView1:UIView){
     }
     
     var remoteView: RTCEAGLVideoView = RTCEAGLVideoView()
     var localView: RTCEAGLVideoView = RTCEAGLVideoView()
     
-    public var roomName: String!
+    open var roomName: String!
     var client: ARDAppClient?
     var localVideoTrack: RTCVideoTrack?
     var remoteVideoTrack: RTCVideoTrack?
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         LayoutVideoViews(remoteView,localView)
         
@@ -62,12 +62,12 @@ public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, R
         connectToChatRoom()
     }
     
-    public override func viewWillDisappear(animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         disconnect()
     }
     
-    public  override func didReceiveMemoryWarning() {
+    open  override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -78,38 +78,38 @@ public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, R
 //    }
     
     //    MARK: RTCEAGLVideoViewDelegate
-    public func appClient(client: ARDAppClient!, didChangeState state: ARDAppClientState) {
+    open func appClient(_ client: ARDAppClient!, didChange state: ARDAppClientState) {
         switch state{
-        case ARDAppClientState.Connected:
+        case ARDAppClientState.connected:
             print("Client Connected")
             break
-        case ARDAppClientState.Connecting:
+        case ARDAppClientState.connecting:
             print("Client Connecting")
             break
-        case ARDAppClientState.Disconnected:
+        case ARDAppClientState.disconnected:
             print("Client Disconnected")
             remoteDisconnected()
         }
     }
     
-    public func appClient(client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
+    open func appClient(_ client: ARDAppClient!, didReceiveLocalVideoTrack localVideoTrack: RTCVideoTrack!) {
         self.localVideoTrack = localVideoTrack
-        self.localVideoTrack?.addRenderer(localView)
+        self.localVideoTrack?.add(localView)
     }
     
-    public func appClient(client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
+    open func appClient(_ client: ARDAppClient!, didReceiveRemoteVideoTrack remoteVideoTrack: RTCVideoTrack!) {
         self.remoteVideoTrack = remoteVideoTrack
-        self.remoteVideoTrack?.addRenderer(remoteView)
+        self.remoteVideoTrack?.add(remoteView)
     }
     
-    public func appClient(client: ARDAppClient!, didError error: NSError!) {
+    open func appClient(_ client: ARDAppClient!, didError error: Error!) {
         //        Handle the error
         showAlertWithMessage(error.localizedDescription)
         disconnect()
     }
     
     //    MARK: RTCEAGLVideoViewDelegate
-    public func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
+    open func videoView(_ videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
         //        Resize localView or remoteView based on the size returned
     }
     
@@ -126,23 +126,23 @@ public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, R
     
     func connectToChatRoom(){
         client?.serverHostUrl = "https://apprtc.appspot.com"
-        client?.connectToRoomWithId(roomName, options: nil)
+        client?.connectToRoom(withId: roomName, options: nil)
     }
     
     func remoteDisconnected(){
         if(remoteVideoTrack != nil){
-            remoteVideoTrack?.removeRenderer(remoteView)
+            remoteVideoTrack?.remove(remoteView)
         }
         remoteVideoTrack = nil
     }
     
-    public func disconnect(){
+    open func disconnect(){
         if(client != nil){
             if(localVideoTrack != nil){
-                localVideoTrack?.removeRenderer(localView)
+                localVideoTrack?.remove(localView)
             }
             if(remoteVideoTrack != nil){
-                remoteVideoTrack?.removeRenderer(remoteView)
+                remoteVideoTrack?.remove(remoteView)
             }
             localVideoTrack = nil
             remoteVideoTrack = nil
@@ -150,11 +150,11 @@ public class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, R
         }
     }
     
-    func showAlertWithMessage(message: String){
-        let alertView: UIAlertController = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        let alertAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil)
+    func showAlertWithMessage(_ message: String){
+        let alertView: UIAlertController = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alertAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
         alertView.addAction(alertAction)
-        self.presentViewController(alertView, animated: true, completion: nil)
+        self.present(alertView, animated: true, completion: nil)
     }
 }
 
