@@ -22,18 +22,18 @@ import UIKit
 
 import AppRTC_FMWK
 
-public class WebRTCViewController: WebRTCViewControllerBase{
+open class WebRTCViewController: WebRTCViewControllerBase{
     @IBOutlet weak var remoteView: UIView!
     @IBOutlet weak var localView: UIView!
     
-    public override func LayoutVideoViews(remoteView1:UIView, _ localView1:UIView){
+    open override func LayoutVideoViews(_ remoteView1:UIView, _ localView1:UIView){
         remoteView.addSubViewXAsWholeXXXXXXXX(remoteView1)
         localView.addSubViewXAsWholeXXXXXXXX(localView1)
     }
     
-    @IBAction func endButton(sender: UIButton) {
+    @IBAction func endButton(_ sender: UIButton) {
         disconnect()
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
