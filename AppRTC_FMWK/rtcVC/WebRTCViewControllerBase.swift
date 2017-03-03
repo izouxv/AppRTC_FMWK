@@ -49,6 +49,7 @@ open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTC
     var localView: RTCEAGLVideoView = RTCEAGLVideoView()
     
     open var roomName: String!
+    open var serAddr: String! = "https://apprtc.appspot.com"
     var client: ARDAppClient?
     var localVideoTrack: RTCVideoTrack?
     var remoteVideoTrack: RTCVideoTrack?
@@ -125,7 +126,7 @@ open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTC
     }
     
     func connectToChatRoom(){
-        client?.serverHostUrl = "https://apprtc.appspot.com"
+        client?.serverHostUrl = serAddr// "https://apprtc.appspot.com"
         client?.connectToRoom(withId: roomName, options: nil)
     }
     
