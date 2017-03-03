@@ -48,8 +48,8 @@ open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTC
     var remoteView: RTCEAGLVideoView = RTCEAGLVideoView()
     var localView: RTCEAGLVideoView = RTCEAGLVideoView()
     
-    open var roomName: String!
-    open var serAddr: String! = "https://apprtc.appspot.com"
+//    open var roomName: String!
+//    open var serAddr: String! = "https://apprtc.appspot.com"
     var client: ARDAppClient?
     var localVideoTrack: RTCVideoTrack?
     var remoteVideoTrack: RTCVideoTrack?
@@ -60,7 +60,7 @@ open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTC
         
         // Do any additional setup after loading the view, typically from a nib.
         initialize()
-        connectToChatRoom()
+        //connectToChatRoom()
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
@@ -125,7 +125,7 @@ open class WebRTCViewControllerBase: UIViewController, ARDAppClientDelegate, RTC
         localView.delegate = self
     }
     
-    func connectToChatRoom(){
+    open func connectToChatRoom(_ serAddr: String, _ roomName: String ){
         client?.serverHostUrl = serAddr// "https://apprtc.appspot.com"
         client?.connectToRoom(withId: roomName, options: nil)
     }
