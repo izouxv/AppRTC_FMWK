@@ -9,12 +9,17 @@
 import UIKit
 
 
+let kRoomId = "527623689"
+let kSerAddr =  "https://appr.tc"
+//let kRoomId = "123123123"
+//let kSerAddr =  "http://localhost:8080/"
+
 class RoomNameViewController: UIViewController {
     @IBOutlet weak var roomName: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        roomName.text = "051803967"
+        roomName.text = kRoomId
 
         // Do any additional setup after loading the view.
     }
@@ -51,7 +56,7 @@ class RoomNameViewController: UIViewController {
             let webRTCVC: WebRTCViewController = segue.destination as! WebRTCViewController
             let data: String = sender as! String
             webRTCVC.roomName = data
-            webRTCVC.serAddr = "https://appr.tc"
+            webRTCVC.serAddr = kSerAddr
         }
     }
 
