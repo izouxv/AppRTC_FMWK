@@ -22,7 +22,7 @@ import UIKit
 
 
 extension UIView {
-    public  func addSubViewXAsWholeXXXXXXXX(_ view:UIView){
+    public  func addSubviewAsWholeXXXXXXXX(_ view:UIView){
         view.removeFromSuperview()
         
         self.addSubview(view)

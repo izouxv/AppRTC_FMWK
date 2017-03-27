@@ -27,8 +27,8 @@ open class WebRTCViewController: WebRTCViewControllerBase{
     @IBOutlet weak var localView: UIView!
     
     open override func LayoutVideoViews(_ remoteView1:UIView, _ localView1:UIView){
-        remoteView.addSubViewXAsWholeXXXXXXXX(remoteView1)
-        localView.addSubViewXAsWholeXXXXXXXX(localView1)
+        remoteView.addSubviewAsWholeXXXXXXXX(remoteView1)
+        localView.addSubviewAsWholeXXXXXXXX(localView1)
     }
     
     @IBAction func endButton(_ sender: UIButton) {
